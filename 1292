@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int get(char a[])
+{
+    int i=0;int s=0;
+    while(a[i]!=' ')
+    {
+        while(a[i]=='$')
+        {
+            s++;
+        }
+    }
+    return s;
+}
+
+int main()
+{
+    char a[50];
+    gets(a);
+    get(a);
+    return 0;
+}
